@@ -43,6 +43,7 @@ func Provider() *schema.Provider {
 	p := &schema.Provider{
 		ResourcesMap: map[string]*schema.Resource{
 			"azuredevops_agent_pool":                                  taskagent.ResourceAgentPool(),
+			"azuredevops_agent_pool_permissions":                      permissions.ResourceAgentPoolPermissions(),
 			"azuredevops_agent_queue":                                 taskagent.ResourceAgentQueue(),
 			"azuredevops_area_permissions":                            permissions.ResourceAreaPermissions(),
 			"azuredevops_branch_policy_auto_reviewers":                branch.ResourceBranchPolicyAutoReviewers(),

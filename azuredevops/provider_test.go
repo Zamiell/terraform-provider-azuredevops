@@ -11,6 +11,7 @@ import (
 func TestProvider_HasChildResources(t *testing.T) {
 	expectedResources := []string{
 		"azuredevops_agent_pool",
+		"azuredevops_agent_pool_permissions",
 		"azuredevops_agent_queue",
 		"azuredevops_area_permissions",
 		"azuredevops_branch_policy_auto_reviewers",
